@@ -1,13 +1,130 @@
-h1 {
-    border: solid black 3px;
+body {
+    background-color: black;
+    background-image: url("img/bg.png");
+}
+
+.logo {
     margin: 0 auto;
     text-align: center;
-    font-size: 3em;
-    font-family: 'Persona5Menu';
-    
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 @font-face {
     font-family: 'Persona5Menu';
     src: url('Fonts/Persona5MenuFontPrototype-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Arsenal';
+    src: url('Fonts/Arsenal-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Persona5Text';
+    src: url('Fonts/Persona-5-TextFont.ttf') format('truetype');
+}
+
+nav {
+    position: relative;
+    border: solid #890000;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blur-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/bg.png');
+    filter: blur(3px);
+    z-index: -1;
+}
+
+
+.navi {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.navi a:hover {
+    background-color: #4f244f;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    display: inline-block;
+    color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    padding: 14px 20px;
+    font-family: "Persona5Menu";
+    font-size: 3em;
+    text-decoration: none;
+}
+
+.textblock {
+    width: 1280px;
+    height: 711px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.textblock-inner {
+    max-width: 1250px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.container {
+    position: relative; /* Add position relative */
+    border: solid #890000 2px;
+    display: flex; /* Set container as flex container */
+    justify-content: space-between; /* Align items with space between */
+    align-items: center; /* Align items vertically */
+    max-width: 1750px; /* Limit container width */
+    max-height: 750px;
+    margin: 0 auto; /* Center container horizontally */
+    padding: 20px; /* Add padding to container */
+}
+
+.container::before {
+    content: ""; /* Add empty content */
+    position: absolute; /* Position the pseudo-element */
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover the entire container */
+    height: 100%;
+    background-image: url('img/bg.png'); /* Set your background image */
+    filter: blur(2.5px); /* Apply blur effect */
+    z-index: -1; /* Ensure it's behind the container content */
+}
+
+.poster img {
+    width: 400px; /* Ensure poster image fits within its container */
+}
+
+p {
+    font-size: 2.5em;
+    font-family: 'Persona5Text';
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
 }
