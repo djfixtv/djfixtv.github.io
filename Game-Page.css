@@ -95,7 +95,7 @@ a {
 
 .container {
     position: relative; /* Add position relative */
-    border: solid #890000 2px;
+    border: solid #edc575 2px;
     display: flex; /* Set container as flex container */
     justify-content: space-between; /* Align items with space between */
     align-items: center; /* Align items vertically */
