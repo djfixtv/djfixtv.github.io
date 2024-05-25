@@ -2,5 +2,12 @@ h1 {
     border: solid black 3px;
     margin: 0 auto;
     text-align: center;
-    font-size: 3em
+    font-size: 3em;
+    font-family: 'Persona5Menu';
+    
+}
+
+@font-face {
+    font-family: 'Persona5Menu';
+    src: url('Fonts/Persona5MenuFontPrototype-Regular.ttf') format('truetype');
 }
