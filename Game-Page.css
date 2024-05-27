@@ -25,6 +25,9 @@ body {
     align-items: center;
     filter: saturate(2);
 }
+.logo img {
+    width: 31vw;
+}
 
 @font-face {
     font-family: 'Persona5Menu';
@@ -69,7 +72,7 @@ nav {
     width: 100%;
     height: 10vh;
     background: url(img/bg-new-blur.png);
-    border: solid #840000 4px;
+    border: solid #840000 0.2vw;
 }
 
 #nav-wrapper {
@@ -117,7 +120,7 @@ li {
 a {
     display: inline-block;
     color: black;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 0.1vw;;
     -webkit-text-stroke-color: white;
     
     font-family: "Persona5Menu";
@@ -181,7 +184,7 @@ p {
     font-family: 'Persona5Text';
     color: white;
     -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.05vw;
     padding:0;
 }
 
@@ -190,7 +193,7 @@ td {
     font-family: 'Persona5Text';
     color: white;
     -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.05vw;
     padding: 0 ;
     margin: 0 ;
 }
@@ -382,7 +385,7 @@ h1 {
     font-size: 3vw;
     font-family: "Persona5Text";
     color: rgb(255, 255, 255);
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.05vw;
     -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
