@@ -14,7 +14,7 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: relative;
     
 }
 
@@ -61,6 +61,7 @@ nav {
     height: 100%;
     background-image: url(img/bg-new.png);
     background-attachment: fixed;
+    
     filter: blur(3px);
     transform: scale(1.10);
     z-index: -1;
@@ -72,6 +73,7 @@ nav {
     width: 100%;
     height: 10vh;
     background: url(img/bg-new-blur.png);
+    background-size: cover;
     border: solid #840000 0.2vw;
 }
 
@@ -151,7 +153,6 @@ a {
     align-items: center; /* Align items vertically */
     max-width: 90vw; /* Limit container width */
     max-height: 90vw;
-    
     margin: 0 auto; /* Center container horizontally */
     padding: 20px; /* Add padding to container */
 }
@@ -222,54 +223,6 @@ table {
     
 }
 
-.box {
-    position: relative; /* Add position relative */
-    display: flex;
-    padding: 0px;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 800px;
-    
-}
-
-.box::before {
-    content: ""; /* Add empty content */
-    position: absolute; /* Position the pseudo-element */
-    top: 0;
-    left: 0;
-    width: 100%; /* Cover the entire box */
-    height: 100%;
-    background: url("img/StarBG.png") center/cover; /* Specify background image */
-    background-attachment: fixed;
-    filter: blur(2.5px); /* Apply blur effect */
-    z-index: -1; /* Ensure it's behind the content */
-}
-
-.box-img {
-    margin: 0;
-    margin-right: 50px;
-    position:relative;
-    
-}
-
-.box-img img {
-    align-items: center;
-    height: 799px;
-    margin: 0px;
-    border: solid black;
-}
-
-.box-inner {
-    margin-left: 50px;
-    padding-bottom: 0px;
-    margin: 0;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
-}
-
 
 .box-side {
     height: 100%;
@@ -314,6 +267,8 @@ table {
     display: grid;
     height: 100%;
     place-items: center;
+    background: url("img/StarBG.png") center/cover; /* Specify background image */
+    background-attachment: fixed;
 }
 
 .box-img2 img {
@@ -330,54 +285,6 @@ table {
     padding-bottom: 0px;
     margin: 0;
     text-align: center;
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
-}
-
-.box3 {
-    position: relative; /* Add position relative */
-    display: flex;
-    padding: 0px;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 800px;
-    border: solid black;
-}
-
-.box3::before {
-    content: ""; /* Add empty content */
-    position: absolute; /* Position the pseudo-element */
-    top: 0;
-    left: 0;
-    width: 100%; /* Cover the entire box */
-    height: 100%;
-    background: url("img/StarBG.png") center/cover; /* Specify background image */
-    background-attachment: fixed;
-    filter: blur(2.5px); /* Apply blur effect */
-    z-index: -1; /* Ensure it's behind the content */
-}
-
-.box-img3 {
-    margin: 0;
-    margin-left: 50px;
-    position:relative;
-   
-}
-
-.box-img3 img {
-    align-items: center;
-    height: 799px;
-    margin: 0px;
-    border: solid black;
-}
-
-.box-inner3 {
-    margin-right: 50px;
-    padding-bottom: 0px;
-    margin: 0;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -411,7 +318,156 @@ h1 {
 .OG a:hover {
     transform:scale(1.1);
 }
+.char-box {
+    height: 55%;
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
 
+.Char1 {
+    margin: 0;
+    position: relative;
+    width: 12vw;
+    display: flex;
+    height: 25vw;
+    transform: skew(-20deg, -30deg);
+    overflow: hidden;
+    margin-top: 7.5vw;
+    justify-content: center;
+    align-items: center;
+    background: #ff0100;
+    border: solid black 0.3vw;
+}
 
+.inner {
+    width: 100vw ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.inner .img {
+    transform: skew(20deg, 30deg) rotate(20deg);
+    background: url(img/Ren-Amamiya.png);
+    background-position: center;
+    background-size:cover;
+    width: 30vw;
+    height: 100vh;
+}
+
+.inner2 .img {
+    transform: skew(20deg, 30deg) rotate(20deg);
+    background: url(img/Morgana.png);
+    background-position: center;
+    background-size:cover;
+    width: 30vw;
+    height: 100vh;
+}
+
+.inner3 .img {
+    transform: skew(20deg, 30deg) rotate(20deg);
+    background: url(img/Ryuji-Sakamoto.png);
+    background-position: center;
+    background-size:cover;
+    width: 30vw;
+    height: 100vh;
+}
+
+.inner4 .img {
+    transform: skew(20deg, 30deg) rotate(20deg);
+    background: url(img/Ann-Takamaki.png);
+    background-position: center;
+    background-size:cover;
+    width: 30vw;
+    height: 100vh;
+}
+
+.char-side {
+    width: 40vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    transform: skew(-20deg);
+    overflow: hidden;
+}
+.Char2 {
+    margin: 0;
+    width: 40vw;
+    height: 40vw;
+    justify-content: center;
+    align-items: center;
+    background: url(img/StarBG.png);
+    background-position: center;
+    background-size: cover;
+    /*! transform: skew(-20deg) !important; */
+    /*! display: flex; */
+}
+
+.Char2 p {
+    font-size: 1.4vw;
+    margin-top: 10px;
+}
+
+.char-text {
+    width: 38vw;
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name h1 {
+    margin-left: 4vw ;
+}
+.name {
+    position: relative; /* Ensure the parent element is positioned */
+    z-index: 0; /* Ensure the parent element has a lower z-index than other content */
+    width: 100%;
+    height: 100%;
+}
+.name::before {
+    content: "";
+    background-image: url(img/dark.png);
+    filter: blur(2.5px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1; /* Ensure the pseudo-element is behind the parent content */
+    top: 0;
+    left: 0;
+    background-attachment: fixed; /* Ensure the background is fixed */
+}
+
+.img {
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27vw;
+    height: 8vh;
+    background-image: url("img/dark.png");
+    margin-top: 5vh;
+}
+
+.title-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
