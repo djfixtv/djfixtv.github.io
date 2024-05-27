@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const originalAudio = document.getElementById("HoverSound");
-    const buttons = document.querySelectorAll(".but");
+    const buttons = document.querySelectorAll("a");
 
     buttons.forEach(button => {
         button.addEventListener("mouseover", () => {
