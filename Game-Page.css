@@ -73,6 +73,8 @@ nav {
     margin: 0 1vw;
 }
 
+
+
 .navi {
     position: relative;
     z-index: 1;
@@ -376,7 +378,7 @@ table {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3vw;
     font-family: "Persona5Text";
     color: rgb(255, 255, 255);
     -webkit-text-stroke-width: 1px;
@@ -394,15 +396,15 @@ h1 {
 .OG {
     text-align: center; /* Aligns text content to the right */
     
-    width: 500px;
+    width: 40vw;
     margin: 0 auto; /* Center the element horizontally */
 }
 
 .OG a {
-    font-size: 4.5em;
+    font-size: 4.5vw;
 }
 .OG a:hover {
-    font-size: 4.7em;
+    transform:scale(1.1);
 }
 
 
