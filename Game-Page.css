@@ -147,7 +147,7 @@ a {
 
 .container {
     position: relative; /* Add position relative */
-    border: solid #ffc758 2px;
+    border: solid #ffc758 0.15vw;
     display: flex; /* Set container as flex container */
     justify-content: space-between; /* Align items with space between */
     align-items: center; /* Align items vertically */
@@ -177,7 +177,7 @@ a {
 
 .poster img {
     width: 22vw; /* Ensure poster image fits within its container */
-    border: solid #ffc758 1px;
+    border: solid #ffc758 0.05vw;
 }
 
 p {
@@ -527,6 +527,41 @@ h2 {
     margin-bottom: 4vh;
 }
 
+.title2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13vw;
+    height: 8vh;
+    background-image: url("img/dark.png");
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+}
+
+.title3 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16vw;
+    height: 8vh;
+    background-image: url("img/dark.png");
+    margin-bottom: 4vh;
+}
+
+.title4 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18vw;
+    height: 8vh;
+    background-image: url("img/dark.png");
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+}
+
 .title-outer {
     display: flex;
     justify-content: center;
@@ -571,4 +606,51 @@ h2 {
     font-size: 3.75vw;
 }
 
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+}
 
+iframe {
+    border: solid #ffc758 0.15vw;
+    height: 55vh;
+}
+
+.screenshots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.screenshots img {
+    width: 50vw;
+    margin-top: 5vh;
+    border: solid #ffc758 0.15vw;
+}
+
+.review {
+    height: 40.5vh;
+}
+
+.review-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-link {
+    height: 12vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:20vh;
+    margin-bottom: 20vh;
+    background: url("img/dark.png"); 
+    border: solid black 0.3vw;
+
+}
